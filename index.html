@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/Scanner.css">
+    <script src="https://cdn.jsdelivr.net/npm/@zxing/library@0.18.6/umd/index.min.js"></script>
+    <script src="Scripts/Scanner.js"></script>
+    <title>Playing Cupid</title>
+</head>
+<body>
+    <h1>Scan The barcode behind your ID CARD</h1>
+    <div class="videoHolder" id="videoHolder">
+        <video id="test-camera" autoplay playsinline></video>
+    </div>
+    <video id="test-camera-hidden" autoplay playsinline style="display: none;"></video>
+    <canvas id="canvas" style="display:none;"></canvas>
+
+    <div id="barcode-output">Barcode Data: 
+        <span id="barcode-result">None</span>
+    </div>
+
+</body> 
+
+</html>
